@@ -27,8 +27,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterDTExchange",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.3.0/AdiscopeMediaMaxAdapterDTExchange.zip",
-            checksum: "20c2fd8417b3b44d0d23a45cb079a1eea3fc331b9aae832c75528c873b7f143e"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/AdiscopeMediaMaxAdapterDTExchange.zip",
+            checksum: "4f745bc7f9763a8faf4bde118bbc38ad54f14a1935d87a46f822cf68f1c56f0d"
         ),
         .binaryTarget(
             name: "IASDKCore",
