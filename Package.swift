@@ -13,7 +13,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.1.0"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.4.0"),
     ],
     targets: [
         .target(
@@ -27,13 +27,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterDTExchange",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.4.1/AdiscopeMediaMaxAdapterDTExchange.zip",
-            checksum: "4f745bc7f9763a8faf4bde118bbc38ad54f14a1935d87a46f822cf68f1c56f0d"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeMediaMaxAdapterDTExchange.zip",
+            checksum: "72446426997f3794eee71d6800af8c468bb5cf7c11a9554da714da240045fce8"
         ),
         .binaryTarget(
             name: "IASDKCore",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/4.2.0/IASDKCore.xcframework.zip",
-            checksum: "85d11954350be3f4ca9feefa3b6dc101c293f9224eda254b4c0b54f647ad5516"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/IASDKCore.xcframework.zip",
+            checksum: "2c7718cc75f1c685556baffbf92071936cbdca0a2c82e83c0f2dffe8b1f4b01f"
         ),
     ]
 )
