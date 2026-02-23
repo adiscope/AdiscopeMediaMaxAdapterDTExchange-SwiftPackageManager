@@ -13,13 +13,14 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.4.0"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
     ],
     targets: [
         .target(
             name: "AdiscopeMediaMaxAdapterDTExchangeTarget",
             dependencies: [
                 .target(name: "AdiscopeMediaMaxAdapterDTExchange"),
+                .target(name: "AdiscopeMediaMaxAdapterDTExchangeMediationAdapter"),
                 .target(name: "IASDKCore"),
                 .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
             ],
@@ -27,13 +28,18 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AdiscopeMediaMaxAdapterDTExchange",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/AdiscopeMediaMaxAdapterDTExchange.zip",
-            checksum: "72446426997f3794eee71d6800af8c468bb5cf7c11a9554da714da240045fce8"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AdiscopeMediaMaxAdapterDTExchange.zip",
+            checksum: "238a4cd8c339777b7c07524cc67bdc5d6c8d19ea1b08e69dcc4b5cf9e861c080"
+        ),
+        .binaryTarget(
+            name: "AdiscopeMediaMaxAdapterDTExchangeMediationAdapter",
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/AppLovinMediationFyberAdapter.xcframework.zip",
+            checksum: "80ab1cd604ba08ad45ffff98e8ba7b9f3a337ab031113486c0256b78d66462be"
         ),
         .binaryTarget(
             name: "IASDKCore",
-            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.0.0/IASDKCore.xcframework.zip",
-            checksum: "2c7718cc75f1c685556baffbf92071936cbdca0a2c82e83c0f2dffe8b1f4b01f"
+            url: "https://github.com/adiscope/Adiscope-iOS-Sample/releases/download/5.2.0/IASDKCore.xcframework.zip",
+            checksum: "8aace3da1d23f609fbc839c71e677be637157b1bf10a3db1d8617807645b0050"
         ),
     ]
 )
